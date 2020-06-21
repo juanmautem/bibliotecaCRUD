@@ -30,7 +30,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Bienvenidos a Biblioteca" });
+	res.render('principal',{
+  });
+  //res.json({ message: "Bienvenidos a Biblioteca" });
 });
 
 // set port, listen for requests
