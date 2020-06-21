@@ -24,7 +24,7 @@ CREATE PROCEDURE activarAutor(IN id SMALLINT, ast TINYINT(1))
 	  UPDATE autores SET autorStatus = 1  WHERE autorID = id;
 	END$$
 
-CREATE PROCEDURE deactivarAutor(IN id SMALLINT, ast TINYINT(1))
+CREATE PROCEDURE desactivarAutor(IN id SMALLINT, ast TINYINT(1))
 	BEGIN
 	  UPDATE autores SET autorStatus = 0 WHERE autorID = id;
 	END$$
