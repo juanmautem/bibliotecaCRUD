@@ -72,6 +72,10 @@ CREATE TRIGGER delAuCascade BEFORE DELETE ON autores
 	  VALUES('autores', NULL, 'ALL_ATRIBUTES', OLD.autorID, NULL, 'DELETE', CURRENT_USER(),NOW()); 
 	  DELETE FROM autoreslibros WHERE autorID = OLD.autorID; 
 	  INSERT INTO ctrlpers (tabla, idres, att, olddata, newdata, action, user, dateedit) 
+<<<<<<< HEAD
 	  VALUES('autoreslibros', NULL, 'ALL_RELATIONS', OLD.autorID, NULL, 'DELETE', CURRENT_USER(),NOW()); 
 	END $$
+=======
+	  VALUES('autoreslibros', NULL, 'ALL_RELATIONS', OLD.autorID, NULL, 'DELETE', CURRENT_USER(),NOW()); END $$
+>>>>>>> vistas
 DELIMITER ;

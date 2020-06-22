@@ -7,8 +7,7 @@ ALTER TABLE tipousuarios CHANGE fechaCreacion fechaCreacion DATETIME NOT NULL DE
 ALTER TABLE usuario CHANGE fechaCreacion fechaCreacion DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP;
 ALTER TABLE usuariotipo CHANGE fechaCreacion fechaCreacion DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP;
 
-
-INSERT INTO autores (autorID, autorNombre, autorAPat, autorAMat, autorNac, `fechaCreacion`) VALUES
+INSERT INTO autores (autorID, autorNombre, autorAPat, autorAMat, autorNac, fechaCreacion) VALUES
 (NULL, 'L.A.', 'Casillas', 'Santillán', 'Española', CURRENT_DATE()), 
 (NULL, 'M.G.', 'Gintestá', NULL, 'Española', CURRENT_DATE()), 
 (NULL, 'Ó.', 'Pérez', 'Mora', 'Española', CURRENT_DATE()), 

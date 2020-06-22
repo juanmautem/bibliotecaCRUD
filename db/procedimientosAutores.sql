@@ -32,7 +32,11 @@ DELIMITER ;
 
 --PROCEDIMIENTO PARA ELIMINAR UN AUTOR
 DELIMITER $$
+<<<<<<< HEAD
 CREATE PROCEDURE eliminarAutor(IN id SMALLINT, ast TINYINT(1))
+=======
+CREATE PROCEDURE activarAutor(IN id SMALLINT, ast TINYINT(1))
+>>>>>>> vistas
 	BEGIN
 	  DELETE FROM autores WHERE autorID = id;
 	END$$
